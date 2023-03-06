@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let lengthArr = 10;
+
+    for (let i = 0; i < lengthArr; i++) {
+        let con
+        arr.push(parseInt(prompt(`Nhập số nguyên dương: `)))
+        con = arr[i] ;
+        if (con >= 10){
+            document.write("Vị trí thứ " +(i + 1) + " có số lớn hơn 10 là: " + con +"<br>");
+        }
+    }
+    // document.write("Giá trị của bảng đã nhập là: " + arr)
+    // for (let j = 0; j < lengthArr; j ++){
+    //     let n = arr.toString(j);
+    //     if (n >= 10){
+    //         document.write(n+'<br>')
+    //     }
+    // }
+</script>
+</body>
+</html>
