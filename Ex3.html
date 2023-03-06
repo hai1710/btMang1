@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let lengthArr = parseInt(prompt('Nhập độ dài của mảng: ', 0));
+    let max = 0
+    let tong = 0
+    let tbc, con;
+    for (let i = 0; i < lengthArr; i++) {
+        arr.push(parseInt(prompt(`Nhập số nguyên dương: `)));
+        con = parseInt(arr[i]);
+        tong = tong + con
+        console.log(tong)
+        if (max < arr[i]) {
+            max = arr[i]
+            document.write("số lớn nhất trong dãy số: " + max + " ở vị trí thứ " + (i + 1) + '<br>');
+        }
+        tbc = tong / lengthArr
+    }
+    document.write("Giá trị trung bình của bảng là " + tbc)
+</script>
+</body>
+</html>
